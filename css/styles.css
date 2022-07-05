@@ -1,0 +1,235 @@
+/* CSS Reset  */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0;
+}
+
+#logo {
+    margin: 8px 13px;
+}
+
+#logo img {
+    height: 69px;
+    margin: 3px 9px;
+    border-radius: 100%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 8px 17px;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 0.4s;
+}
+
+#navbar ul li a:hover {
+    background-color: #1ed760;
+    border-radius: 5px;
+    /* transform: scale(1.09); */
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 200px;
+    height: 600px;
+    top: 0;
+    position: relative;
+
+}
+
+#home::before {
+    content: "";
+    background: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0;
+}
+
+#home h1 {
+    font-family: 'ubuntu';
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'ubuntu';
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* Services Section  */
+
+.services-container {
+    margin-top: 30px;
+}
+
+#services {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#services .box {
+    border: 0.5px solid black;
+    border-radius: 10px; 
+    margin: 10px;
+    padding: 10px;
+}
+
+#services .box img {
+    margin: auto;
+    display: block;
+}
+
+/* Client Section  */
+#client-section {
+    height: 400px;
+    margin-top: 30px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "aa";
+    background: #d23b3b; 
+    /* background-color: black; */
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+}
+
+
+/* Contact Section  */
+#contact {
+    padding-top: 10px;
+    height: 500px;
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    background-color: aquamarine;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,#contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+#contact-box form {
+    width: 50%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: 'ubuntu';  
+}
+
+/* Footer  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* Utiltiy Classes  */
+.head-primary {
+    font-family: 'ubuntu';
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.head-secondary {
+    font-family: 'ubuntu';
+    font-size: 1.7rem;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 33px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(209, 6, 6);
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.center {
+    text-align: center;
+}
